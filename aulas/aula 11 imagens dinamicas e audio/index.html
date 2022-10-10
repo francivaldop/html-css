@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumentee diminua o tamanho do navegador.</p>
+
+    <picture><!-- Nesse codigo diz que vai aparecer uma imagem-->
+        
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <!--Nesse codigo diz quer se o tamanho maximo da tela for 700px, ele vai carregar a imagem P, só coloquei os 50px para não apareer a barra de rolagem lateral-->
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">,<!--Nesse codigo diz quer se o tamanho maximo da tela for 1000px, ele vai carregar a imagem M, só coloquei os 50px para não apareer a barra de rolagem lateral-->
+
+        <img src="img/foto-g.png" alt="Imagem Flexivel"><!--Importação normal de uma imagem emm um tamanho grande-->
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio preload="metadata" autoplay controls loop>
+      <source src="media/musica.mp3" type="audio/mpeg">
+      <source src="media/musica.ogg" type="audio/ogg">
+      <source src="media/musica.wav" type="audio/wav">
+      <p>Infelismente seu navegador não consegue reproduzir áudio. <a href="media/musica.mp3"> Click aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+    
+
+
+    <!-- 
+        <audio src="media/musica.mp3" controls autoplay></audio>
+        Não deu autoplay no Google Crome, Tipos de audios MP3 WAV OGG
+    -->
+    
+</body>
+</html>

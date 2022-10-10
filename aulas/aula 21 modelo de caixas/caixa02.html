@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        *{
+            text-align: center;
+        }
+
+        section > article > p{
+            text-align: justify;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(105, 105, 105, 0.275);
+            margin: 0px;
+        }
+
+        header{
+
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header > h1{
+            text-align: right;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            text-align: center;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315) ;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: darkorange;
+        }
+
+        main{
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        section > article{
+            background-color: brown;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+            <p>Esportes Política Tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Nóticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto unde iusto reprehenderit necessitatibus alias. Molestiae, voluptate obcaecati ullam distinctio nulla illo accusamus minus dolor provident, rem quidem quod sunt ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto unde iusto reprehenderit necessitatibus alias. Molestiae, voluptate obcaecati ullam distinctio nulla illo accusamus minus dolor provident, rem quidem quod sunt ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto unde iusto reprehenderit necessitatibus alias. Molestiae, voluptate obcaecati ullam distinctio nulla illo accusamus minus dolor provident, rem quidem quod sunt ut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae dolorem velit veritatis aspernatur neque, nobis officiis aliquid! Praesentium ducimus qui repudiandae adipisci eius magnam error provident dolorem eveniet iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto unde iusto reprehenderit necessitatibus alias. Molestiae, voluptate obcaecati ullam distinctio nulla illo accusamus minus dolor provident, rem quidem quod sunt ut.</p>
+                <aside>
+                    <p>Artigo escrito por João Pastoura</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desnvolvido por Francivaldo Pastoura</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
